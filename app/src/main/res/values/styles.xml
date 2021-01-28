@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActionModeStyle">
+        <item name="background">@color/colorPrimary</item>
+        <item name="titleTextStyle">@style/ActionModeTitleTextStyle</item>
+    </style>
+    <style name="CircularProgress">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ToolbarColored">
+        <item name="android:textColorSecondary">#616161</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="actionModeCloseButtonStyle">@style/myclosebutton</item>
+        <item name="actionModeStyle">@style/ActionModeStyle</item>
+    </style>
+    <style name="myclosebutton">
+        <item name="android:tint">#616161</item>
+    </style>
+    <style name="ActionModeTitleTextStyle">
+        <item name="android:textColor">#616161</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay"></style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:actionModeBackground">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay"></style>
+
+</resources>

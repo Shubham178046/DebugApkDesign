@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/other_app_file_opener"
+        android:icon="@mipmap/icon_jump"
+        android:orderInCategory="10"
+        android:title="@string/app_name"
+        android:visible="false"
+        app:iconTint="@color/colorAccent"
+        app:showAsAction="ifRoom" />
+</menu>

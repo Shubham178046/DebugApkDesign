@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@mipmap/ic_search" android:id="@+id/menu_search" android:title="Search" app:actionViewClass="androidx.appcompat.widget.SearchView" app:iconTint="@color/colorAccent" app:showAsAction="never|always|collapseActionView"/>
+    <item android:icon="@mipmap/fab_add" android:id="@+id/all_documents" android:orderInCategory="1" android:title="Docuemnts" app:iconTint="@color/colorAccent" app:showAsAction="never|always|withText">
+        <menu>
+            <item android:icon="@mipmap/ai" android:id="@+id/all_document" android:title="All Documents"/>
+            <item android:icon="@mipmap/pdf" android:id="@+id/pdf_file" android:title="PDF"/>
+            <item android:icon="@mipmap/doc" android:id="@+id/msword_file" android:title="Word"/>
+            <item android:icon="@mipmap/txt" android:id="@+id/txt_file" android:title="Text"/>
+            <item android:icon="@mipmap/xls" android:id="@+id/excel_file" android:title="Excel"/>
+            <item android:icon="@mipmap/ppt" android:id="@+id/ppt_file" android:title="Power Point"/>
+        </menu>
+    </item>
+</menu>

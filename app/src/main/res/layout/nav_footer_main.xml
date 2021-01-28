@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:background="#ededed"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/LLFolderview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_menu_folder"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:gravity="left|center_vertical|center_horizontal|center|start"
+                        android:singleLine="true"
+                        android:text="Folder View"
+                        android:textColor="#020200"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:layout_marginStart="50dp"
+                    android:background="#ededed"
+                    android:text="TextView" />
+
+                <LinearLayout
+                    android:id="@+id/LLFileview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_menu_file"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:gravity="left|center_vertical|center_horizontal|center|start"
+                        android:singleLine="true"
+                        android:text="File View"
+                        android:textColor="#020200"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:layout_marginStart="50dp"
+                    android:background="#ededed"
+                    android:text="TextView" />
+
+                <LinearLayout
+                    android:id="@+id/LLrecentfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_recent"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/google_sans_regular"
+                        android:gravity="left|center_vertical|center_horizontal|center|start"
+                        android:singleLine="true"
+                        android:text="Recent Files"
+                        android:textColor="#020200"
+                        android:textSize="13dp" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:layout_marginStart="50dp"
+                    android:background="#ededed"
+                    android:text="TextView" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

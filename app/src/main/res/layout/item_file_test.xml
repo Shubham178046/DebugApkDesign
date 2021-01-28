@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin_doc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="7dp">
+
+        <RelativeLayout
+            android:id="@+id/RRccc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imgFile"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:padding="0dp"
+                android:src="@drawable/icon_folder" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toStartOf="@+id/ivMore"
+            android:layout_toEndOf="@+id/RRccc"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/iv_appicon"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/iv_appicon">
+
+                <TextView
+                    android:id="@+id/txtFileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/google_sans_regular"
+                    android:singleLine="true"
+                    android:text="Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text Medium Text "
+                    android:textColor="#020200"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/google_sans_regular"
+                android:text="Medium Text Medium Text Medium Text Medium Text Mediumedium Text Medium Text Medium Text Medium Text"
+                android:textColor="#bb606060"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="fill">
+
+                <TextView
+                    android:id="@+id/txtFileSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/google_sans_regular"
+                    android:text="1000 bytes"
+                    android:textColor="#88606060"
+                    android:textSize="13dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivMore"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_menu" />
+
+        <ImageView
+            android:id="@+id/imgcheck"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="6dp"
+            android:src="@mipmap/ic_box"
+            app:tint="@color/colorAccent"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>
